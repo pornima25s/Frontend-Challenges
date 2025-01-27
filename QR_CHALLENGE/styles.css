@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EDF2F7; /* Light blue background */
+  }
+  
+  .box {
+    display: flex;
+    background-color: #FFFFFF; /* White card */
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%; /* Increased box width */
+    height: 60%;
+    max-width: 800px; /* Larger max width */
+  }
+  
+  .subboxL {
+    flex: 1;
+    padding: 32px; /* Increased padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .subboxL h1 {
+    font-size: 2.4rem; /* Larger font size for heading */
+    color: #2D3748; /* Dark text */
+    margin: 0 0 16px; /* More space below heading */
+  }
+  
+  .subboxL p {
+    font-size: 1.2rem; /* Larger font size for paragraph */
+    color: #4A5568; /* Grey text */
+    line-height: 1.6;
+  }
+  
+  .subboxR {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .qr-section {
+    width: 300px; /* Increased QR code width */
+    height: 300px; /* Increased QR code height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDE8F2; /* Light pink */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 24px; /* Larger padding for QR section */
+    transition: background-color 0.3s ease;
+  }
+  
+  .qr-section:hover {
+    background-color: #FBCFE8; /* Slightly darker pink on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .box {
+      flex-direction: column;
+      border-radius: 16px;
+    }
+  
+    .subboxL, .subboxR {
+      text-align: center;
+      padding: 20px; /* Adjusted padding for smaller screens */
+    }
+  
+    .qr-section {
+      margin-top: 10px;
+    }
+  }
+  
+
+  /* about QR - https://github.com/davidshimjs/qrcodejs */
