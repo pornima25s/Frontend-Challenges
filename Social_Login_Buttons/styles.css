@@ -1,0 +1,61 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px; /* Increased padding for larger buttons */
+    font-size: 18px;    /* Increased font size */
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn img {
+    margin-right: 15px;
+    width: 25px;        /* Increased icon size */
+    height: 25px;
+  }
+  
+  .btn.microsoft {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .btn.amazon {
+    background-color: #ffc107;
+    color: #000000;
+  }
+  
+  .btn.slack {
+    background-color: #ffffff;
+    color: #4a154b;
+    border: 1px solid #4a154b;
+  }
+  
+  .btn.facebook {
+    background-color: #1877f2;
+    color: #ffffff;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
