@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prev-month" class="nav-button">&laquo;</button>
+      <span id="month-year" class="month-year"></span>
+      <button id="next-month" class="nav-button">&raquo;</button>
+    </div>
+    <div class="calendar-days">
+      <div class="day">Su</div>
+      <div class="day">Mo</div>
+      <div class="day">Tu</div>
+      <div class="day">We</div>
+      <div class="day">Th</div>
+      <div class="day">Fr</div>
+      <div class="day">Sa</div>
+    </div>
+    <div id="calendar-dates" class="calendar-dates"></div>
+    <button id="clear-selection" class="clear-button">Clear</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
