@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f7fa;
+  }
+  
+  .slider-container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .slider-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .price-label {
+    color: #007bff;
+    font-size: 0.9rem;
+  }
+  
+  .slider {
+    position: relative;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(to right, #4caf50, #e0e0e0);
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4caf50;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4caf50;
+    cursor: pointer;
+  }
+  
+  .price-tooltip {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    transform: translateX(-50%);
+    background: #4caf50;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .currency {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .apply-btn {
+    background: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+  }
+  
+  .apply-btn:hover {
+    background: #0056b3;
+  }
+  

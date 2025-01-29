@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Slider</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="slider-container">
+    <div class="slider-header">
+      <h3>Price</h3>
+      <span class="price-label">Low prices</span>
+    </div>
+    <div class="slider">
+      <input type="range" id="price-slider" min="0" max="100" value="9" step="1">
+      <div class="price-tooltip" id="tooltip">9</div>
+    </div>
+    <div class="footer">
+      <div class="currency">
+        <span>$</span>
+        <span>USD</span>
+      </div>
+      <button class="apply-btn">Apply</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
